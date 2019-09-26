@@ -1,0 +1,493 @@
+@import vars
+@import fonts
+@import libs
+
+::placeholder
+	color: $text-color
+
+::selection
+	background-color: $text-color
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: $green
+
+body
+	position: relative
+	min-width: 320px
+	font-size: 14px
+	font-family: 'Gotham', sans-serif
+	color: $text-color
+	overflow-x: hidden
+
+//
+// Navigation (start)
+//
+.navigation
+
+	&__nav
+		margin: 0
+		padding: 0
+
+	&__nav__item
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		list-style-type: none
+
+	&__nav__item__link
+		height: 100%
+		padding: 28px 0 26px 0
+		margin-right: 20px
+		font-weight: 500
+		color: #96a6a7
+		text-transform: uppercase
+
+		&:hover
+			opacity: .9
+			color: #96a6a7
+			text-decoration: none
+
+		&--filter
+			padding: 21px 0 19px 0
+
+		&--active
+			color: $grapefruit
+
+	&__search
+		width: 75px
+		background-color: #e2dee0
+		background-image: url('../img/icons/search.png')
+		background-position: 50% 50%
+		background-repeat: no-repeat
+		background-size: 23px
+		cursor: pointer
+
+	&__auth
+		position: absolute
+		left: 0
+
+.logo
+
+	&__img
+		width: 100%
+//
+// Navigation (end)
+//
+
+//
+// Header (start)
+//
+.page-header,
+.page-footer
+	background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../img/@2x/city.jpg')
+	background-position: 50% 50%
+	background-repeat: no-repeat
+	background-size: cover
+//
+// Header (end)
+//
+
+//
+// Filters (start)
+//
+.filters__location__title
+	font-size: 12px
+	font-weight: 500
+	color: #96a6a7
+	text-transform: uppercase
+
+.circle
+	border-radius: 100px
+	background-position: 50% 48%
+	background-repeat: no-repeat
+
+	&--icon
+		cursor: pointer
+
+	&--sm
+		min-height: 40px
+		min-width: 40px
+		background-size: 20px
+		background-color: #b6c0c1
+
+	&--md
+		min-height: 54px
+		min-width: 54px
+		background-size: 28px
+		border: 3px solid #ffffff
+		background-color: #b6c0c1
+		overflow: hidden
+
+	&--lg
+		min-width: 100px
+		min-height: 100px
+		background-size: 50px
+		background-color: #b6c0c1
+		border: 3px solid #ffffff
+
+	&--green
+		background-color: $green
+
+	&--orange
+		background-color: $orange
+
+	&--purple
+		background-color: $purple
+
+	&--house
+		background-image: url('../img/icons/house.svg')
+
+	&--woman
+		background-image: url('../img/icons/woman.svg')
+
+	&--hat
+		background-image: url('../img/icons/hat.svg')
+
+	&--melody
+		background-image: url('../img/icons/melody.svg')
+
+	&--bus
+		background-image: url('../img/icons/bus.svg')
+
+	&--flash
+		background-image: url('../img/icons/flash.png')
+		background-size: 15px
+
+	&--leaf
+		background-image: url('../img/icons/leaf.png')
+//
+// Filters (end)
+//
+
+//
+// Offers (start)
+//
+.offers
+	background-color: #f3f1f2
+	padding: 46px 0
+
+	&__offer
+		display: flex
+		flex-direction: column
+
+		&__pic
+			max-height: 140px
+			position: relative
+			width: 100%
+			overflow: hidden
+
+			&__title
+				position: absolute
+				bottom: 0
+				left: 0
+				width: 100%
+				padding: 27px 10px 4px 97px
+				font-weight: 500
+				font-size: 18px
+				text-transform: uppercase
+				color: #fff
+				background-color: rgba(#000, .6)
+
+				span
+					font-size: 12px
+
+			.lazy
+				width: 100%
+
+		&__content
+			position: relative
+			display: flex
+			flex-direction: column
+			min-height: 154px
+			padding: 0 15px 15px 15px
+			background-color: #fff
+			color: $text-color
+			text-align: center
+			font-weight: 500
+
+			&__title
+				margin-top: 36px
+				margin-bottom: 19px
+
+			&__type
+				text-transform: uppercase
+
+			&__rating
+				color: #96a6a7
+
+			.icon-avatar
+				position: relative
+				transform: translateY(-27px)
+
+				&::before
+					position: absolute
+					top: 50px
+					left: calc(50% - 1px)
+					display: block
+					width: 2px
+					height: 24px
+					background-color: #f3f1f2
+					content: ''
+					z-index: -1
+
+		&--sm
+			.circle--icon
+				position: absolute
+				top: 130px
+				left: calc(50% - 27px)
+				z-index: 1
+
+		&--lg
+			.offers__offer__content
+				flex-direction: row
+
+				&__rating
+					margin-top: 20px
+
+				&__title
+					margin-top: 15px
+					margin-bottom: 0
+					text-transform: uppercase
+
+				&__text
+					font-weight: 300
+					text-align: left
+
+					a
+						font-weight: 500
+						color: $text-color
+						text-decoration: underline
+
+		&--green
+			.offers__offer__pic
+				border-bottom: solid 3px $green
+
+			.offers__offer__content__type
+				color: $green
+
+		&--orange
+			.offers__offer__pic
+				border-bottom: solid 3px $orange
+
+			.offers__offer__content__type
+				color: $orange
+
+		&--purple
+			.offers__offer__pic
+				border-bottom: solid 3px $purple
+
+			.offers__offer__content__type
+				color: $purple
+
+
+//
+// Offers (end)
+//
+
+//
+// Footer (start)
+//
+.footer-row
+	&__title
+		display: inline-block
+		margin-bottom: 25px
+		color: #fff
+		font-size: 16px
+		font-weight: 500
+		text-decoration: underline
+
+		&:hover
+			color: #fff
+			text-decoration: none
+
+	&__text
+		color: #c0bebc
+		font-size: 14px
+		line-height: 24px
+//
+// Footer (end)
+//
+.input
+	width: 100%
+	padding: 18px 30px
+	color: #fff
+	background-color: rgba(#fff, .2)
+	border-radius: 30px
+	border: 1px solid rgba(255, 255, 255, 0.2)
+
+	&::placeholder
+		color: #fff
+
+	&--select
+		background-image: url('../img/icons/arrow-down.png')
+		background-position: calc(100% - 14px) 50%
+		background-repeat: no-repeat
+		background-size: 14px
+
+	&--filter
+		border: 1px solid #96a6a7
+		background-image: url('../img/icons/arrow-down-gray.png')
+		padding: 8px 20px
+
+		&::placeholder
+			color: $grapefruit
+
+	&--location
+		padding: 8px 20px
+		background-image: url('../img/icons/location.png')
+		background-size: 8px
+		background-color: $green
+
+		&::placeholder
+			color: #fff
+
+	&--email
+		padding: 18px 130px 18px 69px
+		background-image: url('../img/icons/email.png')
+		background-position: 33px 48%
+		background-repeat: no-repeat
+		background-size: 18px
+
+.header-1
+	padding-top: 58px
+	padding-bottom: 33px
+	margin: 0
+	color: #fff
+	font-size: 30px
+	font-weight: 500
+	text-align: center
+
+.header-2
+	padding-top: 88px
+	padding-bottom: 11px
+	margin: 0
+	color: $text-color
+	font-size: 22px
+	font-weight: 500
+	text-align: center
+
+.header-3
+	padding-top: 38px
+	padding-bottom: 43px
+	margin: 0
+	color: $green
+	font-size: 24px
+	font-weight: 500
+	text-align: center
+
+.header-4
+	padding-top: 61px
+	padding-bottom: 47px
+	text-shadow: 0 1px 1px rgba(0, 0, 1, 0.15)
+	color: #fff
+	font-size: 24px
+	font-weight: 500
+
+.sub-header-2
+	color: #96a6a7
+	font-size: 16px
+	font-weight: 400
+	text-align: center
+	padding: 0
+	margin: 0
+
+.btn
+	padding-bottom: 0
+	border: none
+	outline: none
+	box-shadow: none
+	transition: opacity linear .2s
+
+	&:hover
+		opacity: .9
+
+	&--auth
+		width: 1000%
+		height: 75px
+		padding-left: 52px
+		background-color: $grapefruit
+		background-image: url('../img/icons/user.png')
+		background-position: 25px 48%
+		background-repeat: no-repeat
+		background-size: 14px
+		color: #fff
+		font-weight: 500
+		text-transform: uppercase
+		text-align: left
+
+	&--search
+		width: 140px
+		height: 60px
+		border-radius: 30px
+		background-color: $grapefruit
+		color: #fff
+		text-transform: uppercase
+		font-weight: 500
+
+	&--subscribe
+		position: absolute
+		top: 4px
+		right: 4px
+		width: 120px
+		height: 50px
+		border-radius: 30px
+		background-color: $grapefruit
+		color: #fff
+		text-transform: uppercase
+		font-weight: 500
+
+.text-center
+	text-align: center
+
+.border-gray
+	border-bottom: solid 1px #e2dee0
+
+.p-18
+	padding: 18px
+
+.price
+	position: absolute
+	display: inline-block
+	top: 7px
+	right: 7px
+	padding: 7px 11px
+	border-radius: 20px
+	color: #fff
+	line-height: 1
+
+	&--green
+		background-color: $green
+
+.load-more
+	display: block
+	color: $text-color
+	font-weight: 500
+
+	span
+		display: inline-block
+		transition: transform linear .2s
+
+	&:hover
+		color: $text-color
+
+		span
+			transform: translateX(5px)
+
+.result-text
+	color: $text-color
+	font-weight: 400
+
+.footer-line
+	margin-top: 50px
+	margin-bottom: 50px
+	width: 100%
+	border: none
+	box-shadow: none
+	height: 1px
+	background-color: rgba(#ffffff, .1)
+

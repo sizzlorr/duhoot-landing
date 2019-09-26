@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Test Landing</title>
+	<meta name="description" content="This is test landing">
+	<meta name="viewport" content="width=device-width">
+	<meta property="og:image" content="img/@1x/preview.jpg">
+	
+	<link rel="stylesheet" href="css/styles.min.css">
+
+</head>
+
+<body>
+	<div class="container navigation">
+		<div class="row">
+			<div class="col-2 d-flex align-items-center">
+				<div class="logo col">
+					<img src="img/_src/logo.png" alt="Logo" class="lazy logo__img"
+						 data-src="img/@1x/logo.png"
+						 data-srcset="img/@1x/logo.png 1x, img/@2x/logo.png 2x">
+				</div>
+			</div>
+			<nav class="col-6 ml-auto">
+				<ul class="navigation__nav d-flex justify-content-between">
+					<li class="navigation__nav__item">
+						<a href="#" class="navigation__nav__item__link">
+							Reality
+						</a>
+					</li>
+					<li class="navigation__nav__item">
+						<a href="#" class="navigation__nav__item__link">
+							Living
+						</a>
+					</li>
+					<li class="navigation__nav__item">
+						<a href="#" class="navigation__nav__item__link">
+							Education
+						</a>
+					</li>
+					<li class="navigation__nav__item">
+						<a href="#" class="navigation__nav__item__link">
+							Entertainment
+						</a>
+					</li>
+					<li class="navigation__nav__item">
+						<a href="#" class="navigation__nav__item__link">
+							Mobility
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="navigation__search"></div>
+			<div class="col-2 position-relative">
+				<div class="navigation__auth">
+					<button class="btn btn--auth">Login</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<header class="page-header">
+		<div class="container">
+			<h1 class="header-1">
+				What are you looking for?
+			</h1>
+			<form action="POST">
+				<div class="row">
+					<div class="col-6 row m-auto">
+						<div class="col-6 pr-2">
+							<input type="text" placeholder="Dubai" class="input input--select">
+						</div>
+						<div class="col-6 pl-2">
+							<input type="text" placeholder="Education" class="input input--select">
+						</div>
+						<div class="col mt-4 mb-4">
+							<input type="text" placeholder="Keyword, name, date, ..." class="input">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col mb-5 text-center">
+						<button class="btn btn--search m-auto">Search</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</header>
+	<div class="filters container">
+		<div class="row justify-content-between">
+			<div class="filters__time col-4">
+				<ul class="navigation__nav d-flex justify-content-between">
+					<li class="navigation__nav__item">
+						<a href="#" class="navigation__nav__item__link navigation__nav__item__link--filter navigation__nav__item__link--active">
+							Recommended
+						</a>
+					</li>
+					<li class="navigation__nav__item">
+						<a href="#" class="navigation__nav__item__link navigation__nav__item__link--filter">
+							Latest
+						</a>
+					</li>
+					<li class="navigation__nav__item">
+						<a href="#" class="navigation__nav__item__link navigation__nav__item__link--filter">
+							Highlights
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="filters__location col-3 m-auto">
+				<div class="row align-items-center">
+					<div class="col-6 pr-1">
+						<input type="text" placeholder="Education" class="input input--filter input--select">
+					</div>
+					<div class="col-6 pl-1">
+						<input type="text" placeholder="Education" class="input input--select input--location">
+					</div>
+				</div>
+			</div>
+			<div class="filters__location col-4 row align-items-center justify-content-end">
+				<div class="filters__location__title">
+					Filter:
+				</div>
+				<div class="circle circle--sm circle--icon circle--house circle--green ml-2"></div>
+				<div class="circle circle--sm circle--icon circle--woman ml-2"></div>
+				<div class="circle circle--sm circle--icon circle--hat ml-2"></div>
+				<div class="circle circle--sm circle--icon circle--melody circle--orange ml-2"></div>
+				<div class="circle circle--sm circle--icon circle--bus circle--purple ml-2"></div>
+			</div>
+		</div>
+	</div>
+	<section class="offers">
+		<div class="container border-gray">
+			<div class="row">
+				<div class="col-3 p-18">
+					<div class="offers__offer offers__offer--sm offers__offer--green">
+						<div class="offers__offer__pic">
+							<img src="img/_src/hotel-sm-1.jpg" alt="Pic" class="lazy w-100"
+								 data-src="img/@1x/hotel-sm-1.jpg"
+								 data-srcset="img/@1x/hotel-sm-1.jpg 1x, img/@2x/hotel-sm-1.jpg 2x">
+							<span class="price price--green">$2,990</span>
+						</div>
+						<div class="circle circle--md circle--icon circle--house circle--green"></div>
+						<div class="offers__offer__content">
+							<div class="offers__offer__content__title">
+								2 bedroom house for rent in Dubai
+							</div>
+							<div class="offers__offer__content__type">
+								Vision Agency
+							</div>
+							<div class="offers__offer__content__rating">
+								<img src="img/icons/stars-sm.png" > (365)
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 p-18">
+					<div class="offers__offer offers__offer--sm offers__offer--orange">
+						<div class="offers__offer__pic">
+							<img src="img/_src/hotel-sm-2.jpg" alt="Pic" class="lazy w-100"
+								 data-src="img/@1x/hotel-sm-2.jpg"
+								 data-srcset="img/@1x/hotel-sm-2.jpg 1x, img/@2x/hotel-sm-2.jpg 2x">
+						</div>
+						<div class="circle circle--md circle--icon circle--melody circle--orange"></div>
+						<div class="offers__offer__content">
+							<div class="offers__offer__content__title">
+								Beach party festival 2014
+							</div>
+							<div class="offers__offer__content__type mt-auto">
+								Long beach
+							</div>
+							<div class="offers__offer__content__rating">
+								<img src="img/icons/stars-sm.png" > (1234)
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 p-18">
+					<div class="offers__offer offers__offer--sm offers__offer--purple">
+						<div class="offers__offer__pic">
+							<img src="img/_src/hotel-sm-3.jpg" alt="Pic" class="lazy w-100"
+								 data-src="img/@1x/hotel-sm-3.jpg"
+								 data-srcset="img/@1x/hotel-sm-3.jpg 1x, img/@2x/hotel-sm-3.jpg 2x">
+						</div>
+						<div class="circle circle--md circle--icon circle--bus circle--purple"></div>
+						<div class="offers__offer__content">
+							<div class="offers__offer__content__title">
+								Aliquam quis pulvinar purus
+							</div>
+							<div class="offers__offer__content__type mt-auto">
+								Bus Trans
+							</div>
+							<div class="offers__offer__content__rating">
+								<img src="img/icons/stars-sm.png" > (765)
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 p-18">
+					<div class="offers__offer offers__offer--sm offers__offer--green">
+						<div class="offers__offer__pic">
+							<img src="img/_src/hotel-sm-1.jpg" alt="Pic" class="lazy w-100"
+								 data-src="img/@1x/hotel-sm-1.jpg"
+								 data-srcset="img/@1x/hotel-sm-1.jpg 1x, img/@2x/hotel-sm-1.jpg 2x">
+							<span class="price price--green">$2,990</span>
+						</div>
+						<div class="circle circle--md circle--icon circle--house circle--green"></div>
+						<div class="offers__offer__content">
+							<div class="offers__offer__content__title">
+								4 bedroom house for rent in Dubai
+							</div>
+							<div class="offers__offer__content__type">
+								Vision Agency
+							</div>
+							<div class="offers__offer__content__rating">
+								<img src="img/icons/stars-sm.png" > (122)
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 p-18">
+					<div class="offers__offer offers__offer--lg offers__offer--green">
+						<div class="offers__offer__pic">
+							<img src="img/_src/hotel-lg-1.jpg" alt="Pic" class="lazy w-100"
+								 data-src="img/@1x/hotel-lg-1.jpg"
+								 data-srcset="img/@1x/hotel-lg-1.jpg 1x, img/@2x/hotel-lg-1.jpg 2x">
+							<div class="offers__offer__pic__title">
+								Vision Agency
+								<img src="img/icons/stars-sm.png" > <span>(365)</span>
+							</div>
+						</div>
+						<div class="offers__offer__content">
+							<div class="icon-avatar">
+								<div class="circle circle--md circle--icon circle--house circle--green"></div>
+								<div class="circle circle--md mt-3">
+									<img src="img/_src/avatar-1.png" alt="Name" class="w-100">
+								</div>
+							</div>
+							<div class="d-flex flex-column align-items-start ml-3">
+								<div class="offers__offer__content__rating">
+									<img src="img/icons/stars-lg.png" >
+								</div>
+								<div class="offers__offer__content__title">
+									Lucy-P
+								</div>
+								<div class="offers__offer__content__text">
+									“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.” <a href="#">...read more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 p-18">
+					<div class="offers__offer offers__offer--lg offers__offer--orange">
+						<div class="offers__offer__pic">
+							<img src="img/_src/hotel-lg-2.jpg" alt="Pic" class="lazy w-100"
+								 data-src="img/@1x/hotel-lg-2.jpg"
+								 data-srcset="img/@1x/hotel-lg-2.jpg 1x, img/@2x/hotel-lg-2.jpg 2x">
+							<div class="offers__offer__pic__title">
+								Skybox club
+								<img src="img/icons/stars-sm.png" > <span>(443)</span>
+							</div>
+						</div>
+						<div class="offers__offer__content">
+							<div class="icon-avatar">
+								<div class="circle circle--md circle--icon circle--house circle--orange"></div>
+								<div class="circle circle--md mt-3">
+									<img src="img/_src/avtar-2.png" alt="Name" class="w-100">
+								</div>
+							</div>
+							<div class="d-flex flex-column align-items-start ml-3">
+								<div class="offers__offer__content__rating">
+									<img src="img/icons/stars-lg.png" >
+								</div>
+								<div class="offers__offer__content__title">
+									peter123
+								</div>
+								<div class="offers__offer__content__text">
+									“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare.” <a href="#">...read more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-3 p-18">
+					<div class="offers__offer offers__offer--sm offers__offer--purple">
+						<div class="offers__offer__pic">
+							<img src="img/_src/hotel-sm-3.jpg" alt="Pic" class="lazy w-100"
+								 data-src="img/@1x/hotel-sm-3.jpg"
+								 data-srcset="img/@1x/hotel-sm-3.jpg 1x, img/@2x/hotel-sm-3.jpg 2x">
+						</div>
+						<div class="circle circle--md circle--icon circle--bus circle--purple"></div>
+						<div class="offers__offer__content">
+							<div class="offers__offer__content__title">
+								Aliquam quis pulvinar purus
+							</div>
+							<div class="offers__offer__content__type mt-auto">
+								Bus Trans
+							</div>
+							<div class="offers__offer__content__rating">
+								<img src="img/icons/stars-sm.png" > (765)
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 p-18">
+					<div class="offers__offer offers__offer--sm offers__offer--green">
+						<div class="offers__offer__pic">
+							<img src="img/_src/hotel-sm-1.jpg" alt="Pic" class="lazy w-100"
+								 data-src="img/@1x/hotel-sm-1.jpg"
+								 data-srcset="img/@1x/hotel-sm-1.jpg 1x, img/@2x/hotel-sm-1.jpg 2x">
+							<span class="price price--green">$2,990</span>
+						</div>
+						<div class="circle circle--md circle--icon circle--house circle--green"></div>
+						<div class="offers__offer__content">
+							<div class="offers__offer__content__title">
+								4 bedroom house for rent in Dubai
+							</div>
+							<div class="offers__offer__content__type">
+								Vision Agency
+							</div>
+							<div class="offers__offer__content__rating">
+								<img src="img/icons/stars-sm.png" > (122)
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 p-18">
+					<div class="offers__offer offers__offer--sm offers__offer--orange">
+						<div class="offers__offer__pic">
+							<img src="img/_src/hotel-sm-2.jpg" alt="Pic" class="lazy w-100"
+								 data-src="img/@1x/hotel-sm-2.jpg"
+								 data-srcset="img/@1x/hotel-sm-2.jpg 1x, img/@2x/hotel-sm-2.jpg 2x">
+						</div>
+						<div class="circle circle--md circle--icon circle--melody circle--orange"></div>
+						<div class="offers__offer__content">
+							<div class="offers__offer__content__title">
+								Beach party festival 2014
+							</div>
+							<div class="offers__offer__content__type mt-auto">
+								Long beach
+							</div>
+							<div class="offers__offer__content__rating">
+								<img src="img/icons/stars-sm.png" > (1234)
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 p-18">
+					<div class="offers__offer offers__offer--sm offers__offer--green">
+						<div class="offers__offer__pic">
+							<img src="img/_src/hotel-sm-1.jpg" alt="Pic" class="lazy w-100"
+								 data-src="img/@1x/hotel-sm-1.jpg"
+								 data-srcset="img/@1x/hotel-sm-1.jpg 1x, img/@2x/hotel-sm-1.jpg 2x">
+							<span class="price price--green">$2,990</span>
+						</div>
+						<div class="circle circle--md circle--icon circle--house circle--green"></div>
+						<div class="offers__offer__content">
+							<div class="offers__offer__content__title">
+								2 bedroom house for rent in Dubai
+							</div>
+							<div class="offers__offer__content__type">
+								Vision Agency
+							</div>
+							<div class="offers__offer__content__rating">
+								<img src="img/icons/stars-sm.png" > (365)
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 p-18">
+					<div class="offers__offer offers__offer--lg offers__offer--orange">
+						<div class="offers__offer__pic">
+							<img src="img/_src/hotel-lg-2.jpg" alt="Pic" class="lazy w-100"
+								 data-src="img/@1x/hotel-lg-2.jpg"
+								 data-srcset="img/@1x/hotel-lg-2.jpg 1x, img/@2x/hotel-lg-2.jpg 2x">
+							<div class="offers__offer__pic__title">
+								Skybox club
+								<img src="img/icons/stars-sm.png" > <span>(443)</span>
+							</div>
+						</div>
+						<div class="offers__offer__content">
+							<div class="icon-avatar">
+								<div class="circle circle--md circle--icon circle--house circle--orange"></div>
+								<div class="circle circle--md mt-3">
+									<img src="img/_src/avtar-2.png" alt="Name" class="w-100">
+								</div>
+							</div>
+							<div class="d-flex flex-column align-items-start ml-3">
+								<div class="offers__offer__content__rating">
+									<img src="img/icons/stars-lg.png" >
+								</div>
+								<div class="offers__offer__content__title">
+									peter123
+								</div>
+								<div class="offers__offer__content__text">
+									“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.” <a href="#">...read more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 p-18">
+					<div class="offers__offer offers__offer--sm offers__offer--green">
+						<div class="offers__offer__pic">
+							<img src="img/_src/hotel-sm-1.jpg" alt="Pic" class="lazy w-100"
+								 data-src="img/@1x/hotel-sm-1.jpg"
+								 data-srcset="img/@1x/hotel-sm-1.jpg 1x, img/@2x/hotel-sm-1.jpg 2x">
+							<span class="price price--green">$2,990</span>
+						</div>
+						<div class="circle circle--md circle--icon circle--house circle--green"></div>
+						<div class="offers__offer__content">
+							<div class="offers__offer__content__title">
+								4 bedroom house for rent in Dubai
+							</div>
+							<div class="offers__offer__content__type">
+								Vision Agency
+							</div>
+							<div class="offers__offer__content__rating">
+								<img src="img/icons/stars-sm.png" > (122)
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 p-18">
+					<div class="offers__offer offers__offer--sm offers__offer--purple">
+						<div class="offers__offer__pic">
+							<img src="img/_src/hotel-sm-3.jpg" alt="Pic" class="lazy w-100"
+								 data-src="img/@1x/hotel-sm-3.jpg"
+								 data-srcset="img/@1x/hotel-sm-3.jpg 1x, img/@2x/hotel-sm-3.jpg 2x">
+						</div>
+						<div class="circle circle--md circle--icon circle--bus circle--purple"></div>
+						<div class="offers__offer__content">
+							<div class="offers__offer__content__title">
+								Aliquam quis pulvinar purus
+							</div>
+							<div class="offers__offer__content__type mt-auto">
+								Bus Trans
+							</div>
+							<div class="offers__offer__content__rating">
+								<img src="img/icons/stars-sm.png" > (765)
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="text-center mb-4 load-more">
+				Load more <span>&rarr;</span>
+			</a>
+		</div>
+		<h2 class="header-2">
+			What can DuHoot offer to you?
+		</h2>
+		<p class="sub-header-2">
+			Etiam cursus ipsum quis enim faucibus
+		</p>
+		<div class="container">
+			<div class="row mt-5">
+				<div class="col-8 m-auto d-flex justify-content-between">
+					<div class="circle circle--lg circle--icon circle--house circle--green"></div>
+					<div class="circle circle--lg circle--icon circle--woman"></div>
+					<div class="circle circle--lg circle--icon circle--hat"></div>
+					<div class="circle circle--lg circle--icon circle--melody circle--orange"></div>
+					<div class="circle circle--lg circle--icon circle--bus circle--purple"></div>
+				</div>
+			</div>
+			<h3 class="header-3">
+				Reality
+			</h3>
+			<div class="row">
+				<div class="col-8 m-auto d-flex justify-content-between">
+					<div class="col-6 d-flex align-items-start pl-3">
+						<div class="circle circle--md circle--flash circle--green"></div>
+						<p class="result-text pl-3">
+							Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.
+						</p>
+					</div>
+					<div class="col-6 d-flex align-items-start">
+						<div class="circle circle--md circle--leaf circle--green"></div>
+						<p class="result-text pl-3">
+							Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="page-footer">
+		<div class="container">
+
+			<h4 class="header-4 text-center">
+				Subscribe to our newsletter
+			</h4>
+			<form action="POST">
+				<div class="row">
+					<div class="col-6 m-auto position-relative">
+						<input type="email" placeholder="your@email.com" class="input input--email">
+						<button class="btn btn--subscribe">Subscribe</button>
+					</div>
+				</div>
+			</form>
+			<hr class="footer-line">
+			<div class="row justify-content-between">
+				<div class="col-2 footer-row">
+					<a href="#" class="footer-row__title">
+						Ipsum quis
+					</a>
+					<p class="footer-row__text">
+						Aliquam quis
+						Pulvinar purus
+						Etiam cursus
+						Ipsum quis
+						Enim faucibus
+					</p>
+				</div>
+				<div class="col-2 footer-row">
+					<a href="#" class="footer-row__title">
+						Ipsum quis
+					</a>
+					<p class="footer-row__text">
+						Aliquam quis
+						Pulvinar purus
+						Etiam cursus
+						Ipsum quis
+						Enim faucibus
+					</p>
+				</div>
+				<div class="col-3 footer-row d-flex flex-column">
+					<a href="#" class="footer-row__title">
+						Follow us
+					</a>
+					<div class="socials d-flex justify-content-start">
+						<div class="socials__icon mr-3">
+							<a href="#">
+								<img src="img/icons/fb.png" alt="Facebook">
+							</a>
+						</div>
+						<div class="socials__icon mr-3">
+							<a href="#">
+								<img src="img/icons/twitter.png" alt="Twitter">
+							</a>
+						</div>
+						<div class="socials__icon mr-3">
+							<a href="#">
+								<img src="img/icons/g-plus.png" alt="Google Plus">
+							</a>
+						</div>
+						<div class="socials__icon">
+							<a href="#">
+								<img src="img/icons/youtube.png" alt="Youtube">
+							</a>
+						</div>
+					</div>
+					<p class="footer-row__text mt-auto">Copyright &copy; All Rights reserved</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
